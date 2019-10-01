@@ -22,14 +22,17 @@ def find_max_value(array)
 end
 
 def find_min_value(array)
-  
-  little = 500000
+
+  minvalue = 0 
   counter = 0 
-  while array.length > counter do
-    if array[counter] < little then 
-      little=array[counter]
+  while array.length > counter do 
+    if count == 0 
+      min = array[count]
+    else 
+      if array[count] < min
+      min = array[count]
     end
-    counter = counter+1 
   end
-  little
+end
+min
 end
