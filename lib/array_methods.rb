@@ -10,20 +10,19 @@ def find_element_index(array, value_to_find)
 end
 
 def find_max_value(array)
-  # Add your solution here
-  bignumber = 0 
+  maxvalue = 0 
   counter = 0 
   while array.length > counter do
-    if array[counter] > bignumber then 
-      bignumber=array[counter]
+    if array[counter] > maxvalue then 
+      maxvalue=array[counter]
     end
-    counter = counter+1 
+    counter += 1 
   end
-  bignumber
+  maxvalue
 end
 
 def find_min_value(array)
-  # Add your solution here
+  
   little = 500000
   counter = 0 
   while array.length > counter do
